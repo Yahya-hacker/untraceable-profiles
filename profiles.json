@@ -1,0 +1,117 @@
+{
+  "profiles": [
+    {
+      "type": "Balanced",
+      "id": "samsung-galaxy-a54-balanced",
+      "name": "Balanced: Samsung Galaxy A54",
+      "description": "Se fond dans la masse. Haute compatibilité.",
+      "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-A546U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36",
+      "acceptLanguage": "en-US,en;q=0.9",
+      "navigator": {
+        "vendor": "Google Inc.",
+        "platform": "Linux armv8l",
+        "hardwareConcurrency": 8,
+        "deviceMemory": 6,
+        "maxTouchPoints": 10,
+        "languages": ["en-US", "en"]
+      },
+      "screen": {
+        "width": 1080,
+        "height": 2340,
+        "availWidth": 1080,
+        "availHeight": 2226,
+        "colorDepth": 24,
+        "pixelDepth": 24
+      },
+      "webgl": {
+        "vendor": "ARM",
+        "renderer": "Mali-G68"
+      },
+      "canvas": {
+        "noiseSeed": 31337
+      },
+      "fonts": {
+        "mode": "pass" 
+      },
+      "timezone": {
+        "mode": "pass"
+      }
+    },
+    {
+      "type": "Balanced",
+      "id": "xiaomi-redmi-note13-balanced",
+      "name": "Balanced: Xiaomi Redmi Note 13",
+      "description": "Se fond dans la masse. Haute compatibilité.",
+      "userAgent": "Mozilla/5.0 (Linux; Android 13; 23021RAAEG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36",
+      "acceptLanguage": "en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7",
+       "navigator": {
+        "vendor": "Google Inc.",
+        "platform": "Linux armv8l",
+        "hardwareConcurrency": 8,
+        "deviceMemory": 8,
+        "maxTouchPoints": 10,
+        "languages": ["en-US", "en", "fr-FR", "fr"]
+      },
+      "screen": {
+        "width": 1080,
+        "height": 2400,
+        "availWidth": 1080,
+        "availHeight": 2285,
+        "colorDepth": 24,
+        "pixelDepth": 24
+      },
+      "webgl": {
+        "vendor": "Qualcomm",
+        "renderer": "Adreno 619"
+      },
+      "canvas": {
+        "noiseSeed": 54321
+      },
+      "fonts": {
+        "mode": "pass"
+      },
+      "timezone": {
+        "mode": "pass"
+      }
+    },
+    {
+      "type": "Extreme",
+      "id": "generic-android-extreme",
+      "name": "Extreme: Generic Android Stealth",
+      "description": "Anonymat maximal. Peut casser certains sites.",
+      "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.113 Mobile Safari/537.36",
+      "acceptLanguage": "en-US,en;q=0.5",
+       "navigator": {
+        "vendor": "Google Inc.",
+        "platform": "Linux armv8l",
+        "hardwareConcurrency": 4,
+        "deviceMemory": 4,
+        "maxTouchPoints": 5,
+        "languages": ["en-US", "en"]
+      },
+      "screen": {
+        "width": 1280,
+        "height": 720,
+        "availWidth": 1280,
+        "availHeight": 720,
+        "colorDepth": 24,
+        "pixelDepth": 24
+      },
+      "webgl": {
+        "vendor": "Google Inc.",
+        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+      },
+      "canvas": {
+        "noiseSeed": 12345
+      },
+      "fonts": {
+        "mode": "block",
+        "allowedFonts": ["Arial", "Courier New", "Georgia", "Times New Roman", "Verdana"]
+      },
+      "timezone": {
+        "mode": "spoof",
+        "value": 0 
+      }
+    }
+  ]
+}
