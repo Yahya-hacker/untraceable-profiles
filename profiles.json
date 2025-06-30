@@ -1,117 +1,121 @@
 {
   "profiles": [
     {
+      "id": "s24-ultra-chrome-balanced",
+      "name": "Samsung Galaxy S24 Ultra",
       "type": "Balanced",
-      "id": "samsung-galaxy-a54-balanced",
-      "name": "Balanced: Samsung Galaxy A54",
-      "description": "Se fond dans la masse. Haute compatibilité.",
-      "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-A546U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36",
+      "description": "Android 14, Chrome Mobile. Profil le plus courant pour une navigation mobile discrète.",
+      "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
       "acceptLanguage": "en-US,en;q=0.9",
+      "webrtc": { "policy": "disable_non_proxied_udp" },
       "navigator": {
         "vendor": "Google Inc.",
         "platform": "Linux armv8l",
         "hardwareConcurrency": 8,
-        "deviceMemory": 6,
-        "maxTouchPoints": 10,
-        "languages": ["en-US", "en"]
+        "deviceMemory": 12,
+        "appName": "Netscape",
+        "appCodeName": "Mozilla",
+        "product": "Gecko",
+        "productSub": "20030107"
       },
       "screen": {
-        "width": 1080,
-        "height": 2340,
-        "availWidth": 1080,
-        "availHeight": 2226,
-        "colorDepth": 24,
-        "pixelDepth": 24
-      },
-      "webgl": {
-        "vendor": "ARM",
-        "renderer": "Mali-G68"
-      },
-      "canvas": {
-        "noiseSeed": 31337
-      },
-      "fonts": {
-        "mode": "pass" 
-      },
-      "timezone": {
-        "mode": "pass"
-      }
-    },
-    {
-      "type": "Balanced",
-      "id": "xiaomi-redmi-note13-balanced",
-      "name": "Balanced: Xiaomi Redmi Note 13",
-      "description": "Se fond dans la masse. Haute compatibilité.",
-      "userAgent": "Mozilla/5.0 (Linux; Android 13; 23021RAAEG) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.6422.113 Mobile Safari/537.36",
-      "acceptLanguage": "en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7",
-       "navigator": {
-        "vendor": "Google Inc.",
-        "platform": "Linux armv8l",
-        "hardwareConcurrency": 8,
-        "deviceMemory": 8,
-        "maxTouchPoints": 10,
-        "languages": ["en-US", "en", "fr-FR", "fr"]
-      },
-      "screen": {
-        "width": 1080,
-        "height": 2400,
-        "availWidth": 1080,
-        "availHeight": 2285,
+        "width": 384,
+        "height": 832,
+        "availWidth": 384,
+        "availHeight": 832,
         "colorDepth": 24,
         "pixelDepth": 24
       },
       "webgl": {
         "vendor": "Qualcomm",
-        "renderer": "Adreno 619"
+        "renderer": "Adreno 750"
       },
-      "canvas": {
-        "noiseSeed": 54321
-      },
+      "canvas": { "noiseSeed": 31337 },
+      "audio": { "noiseSeed": 42, "noiseAmplitude": 0.00001 },
       "fonts": {
-        "mode": "pass"
+        "spoof": true,
+        "standard": ["Roboto", "Noto Sans", "Droid Sans", "sans-serif", "monospace"]
       },
-      "timezone": {
-        "mode": "pass"
-      }
+      "timezone": { "spoof": true, "name": "America/New_York", "offset": 240 },
+      "battery": { "charging": true, "level": 0.88, "chargingTime": 0 }
     },
     {
-      "type": "Extreme",
-      "id": "generic-android-extreme",
-      "name": "Extreme: Generic Android Stealth",
-      "description": "Anonymat maximal. Peut casser certains sites.",
-      "userAgent": "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/125.0.6422.113 Mobile Safari/537.36",
-      "acceptLanguage": "en-US,en;q=0.5",
-       "navigator": {
+      "id": "win-11-laptop-chrome-balanced",
+      "name": "Windows 11 Laptop",
+      "type": "Balanced",
+      "description": "Windows 11, Chrome. Profil le plus courant pour une navigation de bureau.",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+      "acceptLanguage": "en-US,en;q=0.9",
+      "webrtc": { "policy": "disable_non_proxied_udp" },
+      "navigator": {
         "vendor": "Google Inc.",
-        "platform": "Linux armv8l",
-        "hardwareConcurrency": 4,
-        "deviceMemory": 4,
-        "maxTouchPoints": 5,
-        "languages": ["en-US", "en"]
+        "platform": "Win32",
+        "hardwareConcurrency": 12,
+        "deviceMemory": 16,
+        "appName": "Netscape",
+        "appCodeName": "Mozilla",
+        "product": "Gecko",
+        "productSub": "20030107"
       },
       "screen": {
-        "width": 1280,
-        "height": 720,
-        "availWidth": 1280,
-        "availHeight": 720,
+        "width": 1920,
+        "height": 1080,
+        "availWidth": 1920,
+        "availHeight": 1040,
         "colorDepth": 24,
         "pixelDepth": 24
       },
       "webgl": {
-        "vendor": "Google Inc.",
-        "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+        "vendor": "Google Inc. (Intel)",
+        "renderer": "ANGLE (Intel, Intel(R) Iris(R) Xe Graphics, D3D11 vs_5_0 ps_5_0)"
       },
-      "canvas": {
-        "noiseSeed": 12345
-      },
+      "canvas": { "noiseSeed": 1337 },
+      "audio": { "noiseSeed": 99, "noiseAmplitude": 0.00002 },
       "fonts": {
-        "mode": "block",
-        "allowedFonts": ["Arial", "Courier New", "Georgia", "Times New Roman", "Verdana"]
+        "spoof": true,
+        "standard": ["Arial", "Courier New", "Georgia", "Times New Roman", "Verdana", "Segoe UI", "Calibri", "Consolas"]
       },
-      "timezone": {
-        "mode": "spoof",
-        "value": 0 
-      }
+      "timezone": { "spoof": true, "name": "Europe/London", "offset": 0 },
+      "battery": { "charging": true, "level": 1, "chargingTime": 0 }
+    },
+    {
+      "id": "win-11-desktop-firefox-extreme",
+      "name": "Windows 11 Desktop",
+      "type": "Extreme",
+      "description": "Windows 11, Firefox. Protection maximale, peut affecter certains sites.",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
+      "acceptLanguage": "en-GB,en;q=0.5",
+      "webrtc": { "policy": "disable_non_proxied_udp" },
+      "navigator": {
+        "vendor": "",
+        "platform": "Win32",
+        "hardwareConcurrency": 16,
+        "deviceMemory": 32,
+        "appName": "Netscape",
+        "appCodeName": "Mozilla",
+        "product": "Gecko",
+        "productSub": "20100101"
+      },
+      "screen": {
+        "width": 2560,
+        "height": 1440,
+        "availWidth": 2560,
+        "availHeight": 1400,
+        "colorDepth": 24,
+        "pixelDepth": 24
+      },
+      "webgl": {
+        "vendor": "Google Inc. (NVIDIA)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070, D3D11 vs_5_0 ps_5_0)"
+      },
+      "canvas": { "noiseSeed": 9001 },
+      "audio": { "noiseSeed": 101, "noiseAmplitude": 0.000015 },
+      "fonts": {
+        "spoof": true,
+        "standard": ["Arial", "Courier New", "Georgia", "Times New Roman", "Verdana", "Segoe UI", "Calibri", "Consolas"]
+      },
+      "timezone": { "spoof": true, "name": "Asia/Tokyo", "offset": -540 },
+      "battery": { "charging": true, "level": 1, "chargingTime": 0 }
     }
   ]
 }
